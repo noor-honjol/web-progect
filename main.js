@@ -1,4 +1,4 @@
-let choices =['paper','rock','scissors'];
+let choices =['paper','rock','scissors','spock','lizard'];
 let buttons=document.querySelectorAll('.pick');
 let scoreEl=document.getElementById('Score');
 let main=document.getElementById('main');
@@ -62,9 +62,13 @@ function checkwinner(){
 
     
     else if(
-        (userChoice=='paper'&&computerchoice=='rock' )||
-        (userChoice=='rock'&&computerchoice=='scissors' )||
-        (userChoice=='scissors'&&computerchoice=='paper' )
+        (userChoice=='paper'&&(computerchoice=='rock'|| computerchoice=='spock'))||
+
+        (userChoice=='rock'&&(computerchoice=='scissors'||computerchoice=='lizard'))||
+
+        (userChoice=='scissors'&&(computerchoice=='paper'||computerchoice=='lizard'))||
+        (userChoice=='lizard'&&(computerchoice=='paper'||computerchoice=='spock'))||
+        (userChoice=='spock'&&(computerchoice=='scissors'||computerchoice=='rock'))
     ){
         updateScore(1);
         winner.innerText="win";
@@ -87,7 +91,10 @@ function pickRandomChoice(){
 function updatdeSelection(selectionEL,choice){    
     selectionEL.classList.remove('btn-paper');
     selectionEL.classList.remove('btn-rock');
+    selectionEL.classList.remove('btn-lizard');
     selectionEL.classList.remove('btn-scissors');
+    selectionEL.classList.remove('btn-spock');
+
     let img=selectionEL.querySelector('img');
     selectionEL.classList.add(`btn-${choice}`);
     img.src=`images/icon-${choice}.svg`;

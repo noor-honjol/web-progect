@@ -30,7 +30,7 @@ header {
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 1.8rem;
 margin: 0;
 display: flex;
 flex-direction: column;
@@ -67,14 +67,14 @@ main{
     flex-wrap: wrap ;
     justify-content: center;
     align-items: center;
-    height: 350px;
-    width: 400px;
+    height: 400px;
+    width: 420px;
     margin: 0 auto;
     position: relative ;
 }
 
 main::before {
-    background-image: url('images/bg-triangle.svg');
+    background-image: url('images/bg-pentagon.svg');
     background-repeat: no-repeat ;
     background-size: cover ;
     content: '';
@@ -92,8 +92,8 @@ main::before {
     border-radius: 50%;
     box-shadow: inset 0 -5px rgba(0, 0, 0, 0.15) ;
     margin: 0 25px;
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 130px;
     cursor: pointer;
     
 }
@@ -105,13 +105,23 @@ box-shadow: inset 0 5px rgba(0, 0, 0, 0.15) ;
 display: inline-flex;
 align-items: center;
 justify-content: center;
-height: 120px;
-width:120px ;
+height: 110px;
+width:110px ;
 }
 
 .btn-paper{
     background: linear-gradient(
         to  bottom , hsl(230, 89%, 62%) , hsl(230, 89%, 65%));
+
+}
+.btn-lizard{
+    background: linear-gradient(
+        to  bottom ,  hsl(261, 73%, 60%) , hsl(261, 72%, 63%));
+
+}
+.btn-spock{
+    background: linear-gradient(
+        to  bottom , hsl(189, 59%, 53%) , hsl(189, 58%, 57%));
 
 }
 
@@ -212,4 +222,13 @@ width:120px ;
     .selection{
         width: 500px;
     }
+}
+.all{
+    display: flex;
+}
+.spock-paper button{
+    margin:15px 80px; ;
+}
+.lizard-rock button{
+    margin:5px 20px; ;
 }

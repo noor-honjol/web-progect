@@ -22,6 +22,8 @@
                     <span>Rock</span>
                     <span>Paper</span>
                     <span>Scissors</span>
+                    <span>lizard</span>
+                    <span>spock</span>
                 </h1>
                 
                 <div class="score-container" > 
@@ -31,34 +33,55 @@
             </header>
 
         <main id="main">
-            <button class="btn-circle btn-paper pick" data-choice="paper">
-                <span class ="wrapper">
-                    <img src="images/icon-paper.svg" alt="Paper icon"/>
-                </span>
-            </button>
-            
-            <button class="btn-circle btn-scissors pick" data-choice="scissors" >
+            <div class="scissors all">
+                <button class="btn-circle btn-scissors pick" data-choice="scissors" >
                 
-                <span class ="wrapper">
-                    <img src="images/icon-scissors.svg" alt="Scissors icon"/>
-                </span>
+                    <span class ="wrapper">
+                        <img src="images/icon-scissors.svg" alt="Scissors icon"/>
+                    </span>
+                </button>
+            </div>
+
+            <div class="spock-paper all">
+
+
+                <button class="btn-circle btn-spock pick" data-choice="spock">
+                    <span class ="wrapper">
+                        <img src="images/icon-spock.svg" alt="spock icon"/>
+                    </span>
+                </button>
                 
-            </button>
-            
-            <button class="btn-circle btn-rock pick" data-choice="rock"> 
-            
-                <span class ="wrapper">
-                    <img src="images/icon-rock.svg" alt="rock icon"/>
-                </span>
+                <button class="btn-circle btn-paper pick" data-choice="paper">
+                    <span class ="wrapper">
+                        <img src="images/icon-paper.svg" alt="Paper icon"/>
+                    </span>
+                </button>
                 
-            </button> 
+            </div>
+            <div class="lizard-rock all">
+
+                <button class="btn-circle btn-lizard pick" data-choice="lizard">
+                    <span class ="wrapper">
+                        <img src="images/icon-lizard.svg" alt="lizard icon"/>
+                    </span>
+                </button>
+
+                <button class="btn-circle btn-rock pick" data-choice="rock"> 
+                
+                    <span class ="wrapper">
+                        <img src="images/icon-rock.svg" alt="rock icon"/>
+                    </span>
+                    
+                </button> 
+
+            </div>
         </main> 
 
         <button class="btn-rules" id="open">Rules </button>
         </div>
         
         <div class="rules-modal" id="modal">
-            <img src="images/image-rules.svg" alt="rules icon">
+            <img src="images/image-rules-bonus.svg" alt="rules icon">
             <button id="close"><img src="images/icon-close.svg" alt="close icon"></button>
         </div>
 
