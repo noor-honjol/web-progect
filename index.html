@@ -1,0 +1,86 @@
+<!DOCTYPE html >
+<html lang="en">
+    <head>
+        <meta charset ="UTF-8" />
+        <meta name="viewport" content="width=device-width , initial-scale=1.0"/>
+        <link 
+        rel="icon"
+        type="image/png"
+        sizes="32*32"
+        href=""/>
+    <title>Fronter Mentor | Rock , Paper , Scissors </title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js" defer > </script>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <header>
+
+                <h1>
+                    <span>Rock</span>
+                    <span>Paper</span>
+                    <span>Scissors</span>
+                </h1>
+                
+                <div class="score-container" > 
+                    <h4>Score</h4>
+                    <p id="Score">0</p>
+                </div>
+            </header>
+
+        <main id="main">
+            <button class="btn-circle btn-paper pick" data-choice="paper">
+                <span class ="wrapper">
+                    <img src="images/icon-paper.svg" alt="Paper icon"/>
+                </span>
+            </button>
+            
+            <button class="btn-circle btn-scissors pick" data-choice="scissors" >
+                
+                <span class ="wrapper">
+                    <img src="images/icon-scissors.svg" alt="Scissors icon"/>
+                </span>
+                
+            </button>
+            
+            <button class="btn-circle btn-rock pick" data-choice="rock"> 
+            
+                <span class ="wrapper">
+                    <img src="images/icon-rock.svg" alt="rock icon"/>
+                </span>
+                
+            </button> 
+        </main> 
+
+        <button class="btn-rules">Rules </button>
+        </div>
+
+        <div class="selection" id="selection">
+            <div>
+                <h2>you picked</h2>
+                <button class="btn-circle btn-paper" id="user_select" data-choice="paper">
+                    <span class ="wrapper">
+                        <img src="images/icon-paper.svg" alt="Paper icon"/>
+                    </span>
+            </div>
+            
+            <div>
+                <p class="big-text">you <span id="win"> win</span> </p>
+                <button class="btn" id="reset">play again</button>
+            </div>
+
+            <div>
+                <h2>the house picked</h2>  
+                <button class="btn-circle btn-scissors" id="computer_select" data-choice="scissors" >
+                <span class ="wrapper">
+                    <img src="images/icon-scissors.svg" alt="Scissors icon"/>
+                </span>
+            </div>
+        </div>
+
+    </body>
+</html>
+
+
