@@ -9,6 +9,10 @@ let winner=document.getElementById('win');
 let computer_select=document.getElementById('computer_select');
 let user_select=document.getElementById('user_select');
 
+let closeBtn= document.getElementById('close');
+let openBtn=document.getElementById('open');
+let rules=document.getElementById('modal');
+
 let userChoice=undefined;
 
 buttons.forEach(button=>{
@@ -27,12 +31,22 @@ reset.addEventListener('click',()=>{
     main.style.display='flex';
     selection.style.display='none';
 }
-)
+);
+
+openBtn.addEventListener('click',()=>{
+    rules.style.display='flex';
+}
+);
+
+closeBtn.addEventListener('click',()=>{
+    rules.style.display='none';
+}
+);
 
 function updateScore(value){
     score+=value;
     scoreEl.innerText=score;
-}
+};
 
 function checkwinner(){
 
