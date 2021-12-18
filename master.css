@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:600, 700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,600&display=swap');
 *{
     box-sizing: border-box ;
 }
@@ -222,6 +221,7 @@ width:110px ;
     .selection{
         width: 500px;
     }
+
 }
 .all{
     display: flex;
