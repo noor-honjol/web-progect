@@ -1,3 +1,4 @@
+"use strict"
 let choices =['paper','rock','scissors','spock','lizard'];
 let buttons=document.querySelectorAll('.pick');
 let scoreEl=document.getElementById('Score');
