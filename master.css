@@ -1,4 +1,6 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,600&display=swap');
+
 *{
     box-sizing: border-box ;
 }
@@ -210,16 +212,47 @@ width:110px ;
     cursor: pointer;
 }
 @media(max-width:900px){
+
     .selection .btn-circle
 {
-    margin: 50px 20px;
+    margin: 60px 10px;
     transform: scale(1);
+}
+img {
+    transform: scale(0.9);
+}
+main div{
+    transform: scale(0.9);
+}
+main{
+    width: 380px;
+}
+.selection div{
+    
+    margin:8px;
+}
+h2{
+    font-size: 1.2em;
+    
+
 }
     .go-down{
         order:1;
     }
     .selection{
         width: 500px;
+    }
+    .big-text{
+        font-size: 4.8em;
+        margin-bottom:60px ;
+    }
+    .reset{
+        width: 20px;
+    }
+    .btn{
+        font-size: 1.3em;
+        padding: 15px 85px;
+
     }
 
 }
