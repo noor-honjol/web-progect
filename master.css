@@ -149,13 +149,17 @@ width:110px ;
     font-size: 20px;
     font-family: inherit;
     padding: 10px 25px;
-    position: fixed;
-
-    bottom: 20px;
-    right: 30px;
-    letter-spacing: 2px;
     text-transform: uppercase;
-}
+    letter-spacing: 2px;
+    }
+    .crule{
+        position: fixed;
+
+        bottom: 20px;
+        right: 30px;
+
+
+    }
 .btn{
 
     border: 2px solid #fff ;
@@ -212,6 +216,46 @@ width:110px ;
     cursor: pointer;
 }
 @media(max-width:900px){
+
+    .score-container {
+        padding: 0;
+        width: 80px;
+        border-radius:5px;
+        height: 90px;
+    }
+    .crule{
+        position: static;
+            display: flex;
+    justify-content: center;
+    margin: 10px;
+    }
+    
+.btn-circle .wrapper{
+    height: 80px;
+    width:80px ;
+    }
+    main::before {
+        top: 20%;
+        left: 15%;
+        height: 60%;
+        width: 60%;
+        z-index: -1;
+    }
+    .btn-circle{
+    height: 100px;
+    width: 100px;
+    }
+    .score-container p{
+        font-size: 3em;
+    }
+    h4{
+        margin-top:10px;
+        font-size: 0.8em;
+        letter-spacing: 1.5px;
+    }
+    h1{
+        font-size: 1em;
+    }
 
     .selection .btn-circle
 {

@@ -1,4 +1,6 @@
 "use strict"
+
+
 let choices =['paper','rock','scissors','spock','lizard'];
 let buttons=document.querySelectorAll('.pick');
 let scoreEl=document.getElementById('Score');
@@ -36,11 +38,15 @@ reset.addEventListener('click',()=>{
 
 openBtn.addEventListener('click',()=>{
     rules.style.display='flex';
+    user_select.style.display='none';
+    computer_select.style.display='none';
 }
 );
 
 closeBtn.addEventListener('click',()=>{
     rules.style.display='none';
+    user_select.style.display='block';
+    computer_select.style.display='block';
 }
 );
 
